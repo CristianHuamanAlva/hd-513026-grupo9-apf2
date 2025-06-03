@@ -4,17 +4,20 @@
 // en getID colocar el name del id_ que se encuentra en el index 
 
 //navbar
-fetch('/html/navbar.html')
-.then(response => response.text())
-.then(data => {
+const basePath = window.location.pathname.includes('/html/') ? '../html/' : 'html/';
+
+fetch(basePath + 'navbar.html')
+  .then(response => response.text())
+  .then(data => {
     document.getElementById('navbar').innerHTML = data;
-});
+  });
 //footer
-fetch('/html/footer.html')
-.then(response => response.text())
-.then(data => {
+fetch(basePath + 'footer.html')
+  .then(response => response.text())
+  .then(data => {
     document.getElementById('footer').innerHTML = data;
-});
+  });
+
 //continuara...
 //carrousel
 const swiper = new Swiper(".mySwiper", {
