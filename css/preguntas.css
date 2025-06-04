@@ -103,13 +103,7 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Estilo para el footer */
-#footer {
-    background-color: #F4F4F4;
-    padding: 40px 0;
-    text-align: center;
-    color: #333;
-}
+
 
 /* Animación suave */
 .spa_animated {
