@@ -1,0 +1,199 @@
+/* Página de estilos para Equipo Veterinario */
+body {
+    margin: 0;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+/* Reemplazando text-primary con color dorado */
+.text-primary {
+   color: #D4A017 !important; 
+}
+
+/* Botones personalizados */
+.btn-custom {
+    background-color: #D4A017;  /* Color dorado */
+    border: none;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #b88e11;  /* Dorado más oscuro en hover */
+}
+
+/* Estilo de la sección de equipo veterinario */
+#equipo-veterinario {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+#equipo-veterinario .team-card {
+    background-color: #FFF9E6;  /* Fondo amarillo pálido */
+    border: 2px solid #FFD580;  /* Borde dorado */
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column; /* Disposición vertical (imagen arriba, texto abajo) */
+    height: 100%;
+}
+
+/* Imagen del equipo */
+.team-img {
+    flex: 1 0 50%;  /* La imagen ocupa el 50% del contenedor */
+    overflow: hidden;
+    height: 300px; /* Fijamos una altura específica para la imagen */
+}
+
+.team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Información del equipo */
+.team-info {
+    flex: 1 0 50%;  /* La parte de texto ocupa el 50% restante */
+    padding: 15px;
+    text-align: center;
+}
+
+.team-info h4 {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.team-info p {
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Sección de Filosofía y Enfoque */
+#filosofia {
+    background-color: #FFF9E6;
+    padding: 50px 0;
+}
+
+#filosofia h4 {
+    font-size: 2rem;
+    color: #D4A017;  /* Título dorado */
+    margin-bottom: 20px;
+}
+
+#filosofia p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Galería de fotos */
+#galeria {
+    background-color: #F4F4F4;
+    padding: 50px 0;
+}
+
+#galeria h3 {
+    font-size: 2.5rem;
+    color: #D4A017;
+    margin-bottom: 30px;
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Testimonios */
+#testimonios {
+    background-color: #FFF9E6;
+    padding: 50px 0;
+}
+
+.testimonial-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.testimonial-content:hover {
+    background-color: #FFF1C1;
+    color: #D4A017;
+}
+
+/* Sección de Valores */
+#valores {
+    padding: 50px 0;
+}
+
+#valores h2 {
+    font-size: 2.5rem;
+    color: #D4A017;  /* Título dorado */
+    margin-bottom: 20px;
+}
+
+#valores .valor-card {
+    background-color: #FFF9E6;
+    border: 2px solid #FFD580;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+#valores .valor-card:hover {
+    background-color: #FFF1C1;
+}
+
+#valores .valor-card i {
+    color: #D4A017;  /* Iconos dorados */
+    font-size: 2rem;
+}
+
+#valores .valor-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#valores .valor-card p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.spa_animated {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: spaFadeUp 1.2s ease-out forwards;
+}
+
+@keyframes spaFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Estilo para las imágenes en la galería */
+#galeria .gallery-item img {
+    width: 100%;
+    height: 300px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene la proporción sin deformar la imagen */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
